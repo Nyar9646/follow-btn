@@ -18,7 +18,7 @@ export const app = ({ root, initialState, view, actions }) => {
 
             dispatchedActions[key] = option => {
                 setState(action(state, option));
-                // renderDOM();
+                renderDOM();
             };
         }
 

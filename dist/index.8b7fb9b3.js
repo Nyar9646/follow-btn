@@ -716,7 +716,7 @@ const app = ({ root , initialState , view , actions: actions1  })=>{
             const action = actions[key];
             dispatchedActions[key] = (option)=>{
                 setState(action(state, option));
-            // renderDOM();
+                renderDOM();
             };
         }
         return dispatchedActions;
